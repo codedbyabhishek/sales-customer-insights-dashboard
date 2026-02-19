@@ -31,3 +31,9 @@ python src/eda.py
 - `/Users/abhishekkumar/Documents/Projects/sales-customer-insights-dashboard/dashboards/cohort_retention.csv`
 - `/Users/abhishekkumar/Documents/Projects/sales-customer-insights-dashboard/dashboards/channel_campaign_performance.csv`
 - `/Users/abhishekkumar/Documents/Projects/sales-customer-insights-dashboard/reports/monthly_sales_trend.png`
+
+## Portfolio Preview
+![Sales Dashboard Preview](assets/sales_customer_dashboard_preview.png)
+
+## Recruiter Case Study
+- `/Users/abhishekkumar/Documents/Projects/sales-customer-insights-dashboard/docs/CASE_STUDY.md`
