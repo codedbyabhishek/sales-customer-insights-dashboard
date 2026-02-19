@@ -1,181 +1,451 @@
-product_id,category,unit_price
-1,Furniture,1181.74
-2,Office Supplies,694.52
-3,Technology,343.55
-4,Technology,1047.4
-5,Technology,85.29
-6,Technology,127.4
-7,Technology,1137.41
-8,Furniture,781.97
-9,Technology,1115.11
-10,Furniture,163.8
-11,Furniture,923.07
-12,Technology,285.6
-13,Furniture,415.31
-14,Technology,1079.29
-15,Office Supplies,496.45
-16,Furniture,806.29
-17,Furniture,1065.29
-18,Technology,1045.69
-19,Technology,15.64
-20,Technology,194.07
-21,Furniture,1102.75
-22,Technology,677.09
-23,Office Supplies,578.84
-24,Technology,82.98
-25,Technology,34.94
-26,Office Supplies,1144.33
-27,Technology,571.25
-28,Office Supplies,944.77
-29,Office Supplies,267.9
-30,Office Supplies,288.3
-31,Office Supplies,674.51
-32,Technology,1051.85
-33,Furniture,349.85
-34,Office Supplies,397.92
-35,Office Supplies,663.0
-36,Technology,52.81
-37,Technology,457.62
-38,Furniture,669.76
-39,Furniture,10.77
-40,Technology,767.41
-41,Technology,65.9
-42,Technology,865.35
-43,Office Supplies,963.01
-44,Technology,1007.36
-45,Furniture,809.7
-46,Technology,676.08
-47,Furniture,372.54
-48,Technology,512.41
-49,Technology,109.03
-50,Technology,849.99
-51,Technology,34.5
-52,Furniture,499.06
-53,Office Supplies,609.92
-54,Technology,781.86
-55,Furniture,415.12
-56,Technology,534.13
-57,Technology,706.91
-58,Technology,1108.19
-59,Office Supplies,808.01
-60,Furniture,309.05
-61,Technology,1017.48
-62,Office Supplies,70.8
-63,Technology,330.4
-64,Technology,134.24
-65,Office Supplies,539.21
-66,Office Supplies,766.13
-67,Office Supplies,639.54
-68,Technology,974.46
-69,Technology,683.15
-70,Office Supplies,283.04
-71,Office Supplies,646.02
-72,Office Supplies,883.91
-73,Technology,606.03
-74,Furniture,533.15
-75,Technology,637.27
-76,Office Supplies,659.93
-77,Office Supplies,376.12
-78,Technology,1025.8
-79,Office Supplies,253.18
-80,Office Supplies,44.23
-81,Office Supplies,891.08
-82,Furniture,1011.56
-83,Office Supplies,773.07
-84,Technology,565.39
-85,Technology,1170.37
-86,Office Supplies,448.06
-87,Technology,490.05
-88,Furniture,711.38
-89,Technology,519.36
-90,Technology,668.58
-91,Technology,1160.04
-92,Furniture,288.81
-93,Office Supplies,182.53
-94,Office Supplies,511.14
-95,Technology,607.28
-96,Furniture,857.27
-97,Furniture,1146.43
-98,Technology,827.96
-99,Furniture,1184.67
-100,Furniture,299.37
-101,Technology,254.62
-102,Technology,371.31
-103,Office Supplies,945.61
-104,Office Supplies,227.89
-105,Furniture,239.45
-106,Office Supplies,497.02
-107,Technology,384.47
-108,Technology,777.54
-109,Office Supplies,1068.75
-110,Technology,170.7
-111,Technology,658.37
-112,Technology,110.64
-113,Furniture,269.68
-114,Technology,374.38
-115,Technology,697.03
-116,Furniture,668.08
-117,Technology,773.46
-118,Office Supplies,983.59
-119,Technology,228.74
-120,Furniture,893.34
-121,Technology,802.09
-122,Technology,100.25
-123,Technology,416.91
-124,Furniture,38.1
-125,Furniture,112.77
-126,Technology,344.13
-127,Technology,295.52
-128,Technology,1080.71
-129,Technology,1073.08
-130,Technology,695.55
-131,Furniture,883.37
-132,Technology,1199.52
-133,Furniture,495.18
-134,Technology,629.3
-135,Furniture,783.12
-136,Office Supplies,1105.07
-137,Technology,957.43
-138,Furniture,81.98
-139,Technology,856.98
-140,Furniture,306.06
-141,Furniture,309.61
-142,Furniture,658.95
-143,Furniture,837.08
-144,Technology,195.28
-145,Office Supplies,380.84
-146,Office Supplies,860.76
-147,Technology,186.64
-148,Office Supplies,1020.4
-149,Technology,549.97
-150,Office Supplies,705.26
-151,Technology,101.08
-152,Technology,1145.63
-153,Furniture,1089.5
-154,Furniture,232.14
-155,Technology,797.41
-156,Technology,952.78
-157,Office Supplies,150.75
-158,Technology,695.06
-159,Office Supplies,1021.29
-160,Furniture,610.52
-161,Technology,1108.92
-162,Technology,62.12
-163,Technology,1103.46
-164,Technology,1172.78
-165,Office Supplies,191.35
-166,Technology,519.99
-167,Furniture,746.81
-168,Office Supplies,1072.42
-169,Technology,195.63
-170,Office Supplies,404.16
-171,Technology,958.53
-172,Technology,494.96
-173,Office Supplies,727.91
-174,Technology,674.21
-175,Technology,1167.94
-176,Technology,174.13
-177,Technology,1138.39
-178,Office Supplies,679.16
-179,Furniture,1085.46
-180,Office Supplies,145.94
+product_id,category,subcategory,unit_price,cost
+1,Technology,Monitors,1949.05,1157.84
+2,Office Supplies,Paper,1112.75,720.26
+3,Furniture,Chairs,1075.44,707.12
+4,Office Supplies,Paper,796.51,517.99
+5,Furniture,Chairs,462.5,227.01
+6,Furniture,Chairs,233.22,112.4
+7,Office Supplies,Art,943.26,712.94
+8,Office Supplies,Art,188.96,151.79
+9,Technology,Printers,1256.45,869.15
+10,Technology,Phones,940.52,738.02
+11,Technology,Phones,1764.65,1267.49
+12,Office Supplies,Art,1483.22,1192.46
+13,Furniture,Chairs,1484.74,1165.19
+14,Office Supplies,Storage,327.66,268.56
+15,Office Supplies,Binders,1223.98,937.25
+16,Technology,Monitors,1334.74,1070.13
+17,Office Supplies,Paper,835.22,468.96
+18,Technology,Printers,452.36,290.95
+19,Technology,Monitors,1173.88,734.77
+20,Furniture,Chairs,1281.76,738.9
+21,Accessories,Cables,889.44,627.08
+22,Office Supplies,Binders,715.56,459.27
+23,Technology,Laptops,1433.67,814.65
+24,Furniture,Chairs,897.92,577.18
+25,Accessories,Adapters,1727.85,1223.54
+26,Technology,Monitors,392.08,205.91
+27,Accessories,Bags,1333.14,1045.78
+28,Technology,Phones,254.01,173.85
+29,Office Supplies,Art,1784.81,1010.9
+30,Furniture,Bookcases,2098.02,978.72
+31,Office Supplies,Storage,256.03,149.63
+32,Office Supplies,Art,1852.32,975.09
+33,Technology,Laptops,1454.41,723.93
+34,Technology,Laptops,2037.24,1270.43
+35,Technology,Phones,1036.22,602.45
+36,Accessories,Headphones,1651.55,783.6
+37,Technology,Monitors,1028.51,750.03
+38,Office Supplies,Binders,1793.75,1174.26
+39,Accessories,Adapters,23.87,12.75
+40,Furniture,Tables,1339.59,729.71
+41,Technology,Laptops,865.29,657.52
+42,Technology,Printers,178.23,90.06
+43,Furniture,Bookcases,1746.26,1197.54
+44,Furniture,Bookcases,1955.12,1025.96
+45,Office Supplies,Art,2161.08,1575.74
+46,Office Supplies,Art,2165.3,1492.64
+47,Technology,Phones,640.24,424.39
+48,Furniture,Desks,668.76,428.35
+49,Technology,Printers,1377.92,1017.9
+50,Technology,Monitors,1372.8,949.68
+51,Technology,Printers,1397.14,732.51
+52,Office Supplies,Binders,1342.77,930.63
+53,Office Supplies,Binders,2139.61,1724.57
+54,Technology,Printers,224.34,103.68
+55,Furniture,Tables,266.2,132.88
+56,Technology,Phones,1745.36,1103.51
+57,Technology,Printers,1928.71,1410.3
+58,Office Supplies,Storage,1859.62,1015.21
+59,Accessories,Bags,890.84,440.22
+60,Technology,Printers,1227.06,633.98
+61,Office Supplies,Binders,895.92,695.05
+62,Furniture,Desks,1892.0,1056.78
+63,Office Supplies,Paper,1874.96,1018.75
+64,Technology,Laptops,2095.79,1547.51
+65,Technology,Phones,884.09,407.18
+66,Technology,Phones,102.08,63.27
+67,Office Supplies,Binders,697.21,398.52
+68,Office Supplies,Paper,546.73,264.36
+69,Office Supplies,Binders,1020.32,812.77
+70,Office Supplies,Art,1422.58,1084.86
+71,Office Supplies,Binders,177.53,89.45
+72,Technology,Printers,1314.3,953.77
+73,Furniture,Tables,1948.89,1268.11
+74,Office Supplies,Paper,913.21,580.38
+75,Accessories,Adapters,1231.94,991.89
+76,Office Supplies,Storage,1516.61,1096.78
+77,Accessories,Bags,248.01,168.45
+78,Technology,Phones,1205.83,915.59
+79,Technology,Phones,595.43,449.22
+80,Office Supplies,Binders,367.15,260.73
+81,Accessories,Bags,1513.07,693.96
+82,Furniture,Desks,629.6,382.67
+83,Furniture,Chairs,135.05,99.45
+84,Office Supplies,Binders,253.17,139.67
+85,Technology,Monitors,1051.9,574.71
+86,Office Supplies,Art,311.39,190.71
+87,Technology,Monitors,1994.59,961.54
+88,Office Supplies,Art,1685.19,972.58
+89,Office Supplies,Art,1267.26,886.34
+90,Furniture,Chairs,1677.23,1184.8
+91,Furniture,Chairs,1969.79,1485.82
+92,Office Supplies,Storage,38.66,27.93
+93,Furniture,Tables,1969.26,896.89
+94,Accessories,Cables,2056.38,1400.12
+95,Office Supplies,Art,713.6,323.12
+96,Accessories,Headphones,823.96,442.73
+97,Technology,Phones,1531.74,800.7
+98,Technology,Laptops,1018.55,469.78
+99,Furniture,Desks,949.83,747.66
+100,Technology,Phones,1497.62,975.56
+101,Accessories,Adapters,428.21,207.18
+102,Office Supplies,Binders,1454.91,745.89
+103,Office Supplies,Storage,353.46,230.79
+104,Furniture,Chairs,537.49,427.56
+105,Technology,Monitors,1199.4,615.62
+106,Furniture,Chairs,1993.4,1218.36
+107,Furniture,Tables,122.05,98.06
+108,Technology,Monitors,525.68,304.29
+109,Office Supplies,Art,445.29,230.92
+110,Office Supplies,Storage,1627.81,828.77
+111,Technology,Printers,723.73,573.59
+112,Office Supplies,Binders,2094.68,1492.85
+113,Furniture,Desks,1226.14,645.21
+114,Accessories,Headphones,73.61,55.24
+115,Accessories,Cables,1452.83,814.34
+116,Technology,Phones,554.05,357.93
+117,Accessories,Bags,520.84,363.24
+118,Technology,Phones,824.14,546.02
+119,Office Supplies,Binders,2025.95,1289.93
+120,Office Supplies,Binders,781.86,359.44
+121,Office Supplies,Art,211.32,112.42
+122,Office Supplies,Storage,889.16,477.71
+123,Furniture,Chairs,1233.31,608.93
+124,Furniture,Chairs,140.83,105.47
+125,Office Supplies,Storage,610.32,437.41
+126,Office Supplies,Storage,1448.61,729.41
+127,Technology,Phones,1189.61,779.18
+128,Furniture,Bookcases,2018.89,986.31
+129,Furniture,Tables,194.47,152.77
+130,Technology,Printers,1930.57,963.62
+131,Accessories,Cables,1596.04,1012.2
+132,Office Supplies,Storage,1159.97,702.75
+133,Technology,Phones,1719.05,965.38
+134,Office Supplies,Storage,989.93,779.55
+135,Technology,Printers,429.89,201.73
+136,Technology,Monitors,902.03,420.08
+137,Technology,Phones,653.62,364.66
+138,Technology,Laptops,1140.09,670.79
+139,Accessories,Bags,1508.5,1211.33
+140,Furniture,Tables,1858.42,954.05
+141,Accessories,Headphones,238.9,139.74
+142,Accessories,Bags,1527.55,899.06
+143,Office Supplies,Binders,693.44,380.42
+144,Technology,Monitors,2044.73,1204.6
+145,Furniture,Bookcases,1121.11,814.29
+146,Office Supplies,Binders,1537.36,1114.35
+147,Furniture,Bookcases,655.66,401.84
+148,Technology,Phones,604.42,414.52
+149,Technology,Phones,567.78,367.63
+150,Furniture,Bookcases,1659.98,1142.23
+151,Technology,Monitors,946.37,663.2
+152,Office Supplies,Art,218.77,111.86
+153,Technology,Phones,2036.74,1116.45
+154,Technology,Printers,1932.42,1328.85
+155,Furniture,Chairs,1573.26,1147.24
+156,Furniture,Chairs,318.57,252.1
+157,Office Supplies,Storage,1990.62,908.26
+158,Technology,Monitors,2122.32,1243.41
+159,Office Supplies,Paper,528.68,311.29
+160,Office Supplies,Art,348.7,229.6
+161,Furniture,Bookcases,2084.11,1193.86
+162,Technology,Printers,86.47,57.75
+163,Furniture,Bookcases,1747.71,1425.71
+164,Furniture,Chairs,190.41,97.25
+165,Office Supplies,Art,2194.37,1620.75
+166,Accessories,Cables,501.42,265.21
+167,Technology,Printers,82.52,64.83
+168,Furniture,Desks,1059.64,734.98
+169,Accessories,Adapters,370.93,269.78
+170,Accessories,Headphones,1051.61,565.16
+171,Office Supplies,Binders,1620.98,996.86
+172,Office Supplies,Paper,721.75,457.21
+173,Office Supplies,Art,1955.64,1393.42
+174,Accessories,Adapters,2139.83,1508.64
+175,Technology,Printers,314.75,210.81
+176,Office Supplies,Art,1836.68,1143.75
+177,Technology,Phones,1428.58,947.0
+178,Technology,Monitors,2050.96,1016.83
+179,Furniture,Desks,251.63,174.62
+180,Technology,Monitors,710.29,364.21
+181,Office Supplies,Storage,1428.97,708.35
+182,Furniture,Chairs,42.86,32.38
+183,Technology,Monitors,574.96,304.09
+184,Office Supplies,Paper,709.76,421.04
+185,Technology,Printers,1176.03,611.62
+186,Technology,Laptops,1388.28,680.19
+187,Office Supplies,Storage,1610.32,970.05
+188,Technology,Phones,710.44,341.16
+189,Technology,Monitors,546.75,436.22
+190,Furniture,Bookcases,1629.5,806.41
+191,Furniture,Tables,393.69,295.82
+192,Office Supplies,Storage,2086.59,1035.82
+193,Technology,Printers,1361.93,747.39
+194,Technology,Monitors,1393.63,895.32
+195,Furniture,Tables,291.6,191.6
+196,Furniture,Chairs,1898.84,1535.91
+197,Technology,Phones,1697.39,1118.1
+198,Office Supplies,Art,101.4,54.41
+199,Technology,Monitors,2083.16,979.7
+200,Technology,Monitors,1624.51,841.3
+201,Office Supplies,Binders,1045.71,672.86
+202,Office Supplies,Storage,391.91,197.21
+203,Furniture,Chairs,1305.68,899.04
+204,Technology,Laptops,1820.18,1490.92
+205,Office Supplies,Paper,2115.5,1197.85
+206,Technology,Laptops,1565.31,1245.96
+207,Technology,Monitors,229.27,145.18
+208,Technology,Phones,1431.19,994.08
+209,Technology,Monitors,664.48,402.98
+210,Office Supplies,Binders,1214.22,769.66
+211,Office Supplies,Art,1958.91,1311.51
+212,Technology,Phones,1492.13,881.86
+213,Accessories,Adapters,2065.13,1100.78
+214,Office Supplies,Binders,1559.73,1206.11
+215,Furniture,Tables,641.76,522.46
+216,Technology,Monitors,1037.09,743.47
+217,Office Supplies,Binders,329.6,151.77
+218,Furniture,Chairs,1636.5,1133.5
+219,Office Supplies,Storage,1157.98,771.23
+220,Technology,Laptops,719.32,508.05
+221,Technology,Phones,2064.19,1088.4
+222,Technology,Monitors,965.92,676.78
+223,Office Supplies,Paper,1964.64,1191.07
+224,Office Supplies,Binders,1452.73,1073.49
+225,Furniture,Desks,1863.21,1133.47
+226,Accessories,Adapters,128.57,70.28
+227,Technology,Phones,605.84,448.05
+228,Technology,Monitors,1350.72,862.6
+229,Furniture,Tables,722.23,474.15
+230,Accessories,Adapters,770.95,438.16
+231,Technology,Laptops,802.88,479.33
+232,Furniture,Bookcases,2167.02,1718.81
+233,Office Supplies,Storage,231.8,109.8
+234,Office Supplies,Art,406.17,227.72
+235,Office Supplies,Art,2049.57,1214.6
+236,Furniture,Bookcases,180.76,130.63
+237,Office Supplies,Paper,1371.48,621.96
+238,Technology,Printers,46.13,27.08
+239,Office Supplies,Art,1815.58,850.36
+240,Furniture,Tables,976.15,733.99
+241,Technology,Printers,60.08,49.21
+242,Furniture,Chairs,1313.28,633.13
+243,Technology,Laptops,467.35,246.82
+244,Office Supplies,Binders,53.79,39.93
+245,Technology,Laptops,794.38,500.31
+246,Furniture,Bookcases,527.15,409.22
+247,Technology,Monitors,545.0,271.21
+248,Office Supplies,Binders,967.43,604.55
+249,Office Supplies,Paper,630.92,418.83
+250,Accessories,Headphones,757.87,405.81
+251,Technology,Phones,749.68,452.64
+252,Technology,Printers,420.94,336.97
+253,Technology,Phones,721.29,435.92
+254,Furniture,Tables,352.46,250.83
+255,Technology,Monitors,309.8,154.44
+256,Office Supplies,Binders,270.19,163.67
+257,Furniture,Chairs,365.56,233.14
+258,Furniture,Tables,1254.52,681.36
+259,Technology,Phones,2037.37,1016.82
+260,Office Supplies,Art,886.19,663.1
+261,Technology,Laptops,41.67,24.0
+262,Office Supplies,Binders,575.96,382.76
+263,Technology,Printers,1103.68,691.57
+264,Furniture,Bookcases,1594.88,923.04
+265,Office Supplies,Storage,1196.31,631.13
+266,Office Supplies,Binders,612.06,442.56
+267,Furniture,Chairs,704.64,480.91
+268,Technology,Printers,2019.89,1215.11
+269,Accessories,Bags,1716.28,1076.36
+270,Furniture,Chairs,735.55,423.91
+271,Office Supplies,Art,2028.54,1257.72
+272,Furniture,Desks,597.62,456.81
+273,Furniture,Chairs,923.16,654.71
+274,Office Supplies,Binders,583.22,405.8
+275,Technology,Monitors,2093.18,1037.19
+276,Technology,Laptops,729.56,335.46
+277,Accessories,Headphones,1772.77,931.05
+278,Office Supplies,Binders,160.1,112.64
+279,Accessories,Headphones,964.53,716.87
+280,Office Supplies,Paper,1531.09,1124.06
+281,Accessories,Headphones,1897.7,953.44
+282,Accessories,Headphones,1398.44,779.23
+283,Technology,Printers,2114.51,1020.08
+284,Technology,Phones,830.18,500.13
+285,Accessories,Headphones,576.1,426.24
+286,Technology,Laptops,1368.5,1075.71
+287,Office Supplies,Binders,923.37,504.54
+288,Accessories,Cables,2180.66,1704.04
+289,Office Supplies,Paper,2026.82,1004.27
+290,Office Supplies,Art,71.63,39.1
+291,Office Supplies,Paper,617.15,323.71
+292,Technology,Monitors,988.23,716.26
+293,Technology,Laptops,1635.52,1325.44
+294,Technology,Monitors,1415.54,1000.33
+295,Accessories,Bags,2092.71,1052.11
+296,Office Supplies,Storage,1439.94,826.72
+297,Furniture,Bookcases,1618.48,1072.01
+298,Technology,Phones,819.69,477.72
+299,Technology,Phones,1912.75,928.11
+300,Office Supplies,Paper,1460.12,1139.39
+301,Furniture,Bookcases,855.96,484.22
+302,Office Supplies,Paper,1643.27,944.95
+303,Technology,Phones,976.29,795.36
+304,Office Supplies,Paper,626.46,416.4
+305,Office Supplies,Art,626.48,410.97
+306,Office Supplies,Storage,858.43,432.67
+307,Technology,Phones,395.72,204.17
+308,Office Supplies,Binders,1943.15,1167.13
+309,Furniture,Chairs,438.19,302.04
+310,Office Supplies,Binders,1232.45,685.42
+311,Office Supplies,Binders,1404.0,1047.91
+312,Accessories,Bags,354.62,164.48
+313,Office Supplies,Binders,1015.12,487.56
+314,Technology,Printers,1873.79,1051.97
+315,Office Supplies,Art,1740.7,1312.2
+316,Furniture,Tables,1521.55,928.99
+317,Accessories,Adapters,1053.43,763.97
+318,Office Supplies,Paper,1961.26,1187.5
+319,Office Supplies,Paper,1666.15,823.66
+320,Furniture,Bookcases,120.55,93.81
+321,Office Supplies,Paper,142.08,76.77
+322,Office Supplies,Paper,923.54,742.89
+323,Furniture,Desks,1381.39,981.84
+324,Technology,Phones,2064.15,955.38
+325,Office Supplies,Binders,1915.03,995.56
+326,Technology,Printers,356.75,173.76
+327,Accessories,Cables,1609.59,958.3
+328,Office Supplies,Paper,976.07,579.22
+329,Technology,Laptops,1058.44,685.45
+330,Accessories,Adapters,1298.74,901.04
+331,Office Supplies,Art,1489.54,856.06
+332,Furniture,Chairs,1753.85,1094.77
+333,Furniture,Tables,569.57,415.84
+334,Technology,Monitors,1413.29,1035.28
+335,Office Supplies,Paper,830.27,676.7
+336,Accessories,Bags,338.48,250.54
+337,Furniture,Bookcases,197.04,155.4
+338,Technology,Laptops,514.37,298.11
+339,Accessories,Adapters,1881.79,886.74
+340,Office Supplies,Art,1255.45,669.95
+341,Technology,Phones,719.13,581.49
+342,Furniture,Desks,2153.66,1403.5
+343,Technology,Printers,543.64,387.35
+344,Office Supplies,Storage,233.32,112.32
+345,Office Supplies,Binders,1035.9,555.4
+346,Accessories,Cables,1083.21,612.28
+347,Furniture,Tables,1665.33,989.4
+348,Technology,Monitors,1287.32,920.13
+349,Technology,Laptops,1399.34,985.96
+350,Furniture,Chairs,242.99,187.42
+351,Office Supplies,Storage,1188.93,826.87
+352,Technology,Printers,1355.78,820.45
+353,Furniture,Desks,1806.04,1060.53
+354,Technology,Printers,1371.03,821.67
+355,Office Supplies,Binders,181.81,92.41
+356,Furniture,Bookcases,1509.17,732.94
+357,Technology,Monitors,1901.59,1019.52
+358,Office Supplies,Binders,1957.56,1392.43
+359,Accessories,Headphones,299.86,236.71
+360,Office Supplies,Art,650.32,360.7
+361,Technology,Printers,155.57,85.55
+362,Technology,Laptops,477.51,365.24
+363,Furniture,Bookcases,203.62,161.06
+364,Furniture,Bookcases,218.65,152.54
+365,Office Supplies,Storage,1273.7,971.81
+366,Technology,Laptops,1576.14,1030.28
+367,Office Supplies,Paper,2197.32,1379.3
+368,Technology,Printers,1921.24,1451.48
+369,Technology,Phones,1547.22,1265.33
+370,Technology,Printers,762.2,387.5
+371,Office Supplies,Art,1702.7,909.42
+372,Office Supplies,Storage,1133.89,583.98
+373,Office Supplies,Paper,917.26,675.02
+374,Technology,Monitors,1166.15,555.13
+375,Furniture,Desks,1986.72,1218.93
+376,Furniture,Chairs,843.89,577.73
+377,Office Supplies,Storage,613.42,441.35
+378,Office Supplies,Art,1517.71,730.07
+379,Furniture,Bookcases,1679.01,1039.73
+380,Accessories,Adapters,224.62,177.69
+381,Office Supplies,Storage,1648.38,1057.15
+382,Furniture,Desks,865.14,578.63
+383,Technology,Printers,2033.59,1071.58
+384,Technology,Printers,676.73,415.37
+385,Accessories,Adapters,677.19,509.15
+386,Technology,Monitors,127.81,69.84
+387,Technology,Laptops,1782.32,968.09
+388,Technology,Laptops,657.43,453.4
+389,Technology,Printers,1059.26,669.36
+390,Office Supplies,Binders,474.83,317.45
+391,Technology,Printers,55.37,36.12
+392,Technology,Monitors,2039.81,1054.24
+393,Technology,Monitors,2006.83,1311.9
+394,Office Supplies,Paper,417.92,292.02
+395,Office Supplies,Paper,568.39,430.71
+396,Office Supplies,Binders,545.65,333.77
+397,Office Supplies,Storage,2084.88,1476.37
+398,Office Supplies,Binders,41.78,30.87
+399,Office Supplies,Storage,2131.33,1347.09
+400,Furniture,Chairs,501.6,314.3
+401,Technology,Monitors,1669.48,1138.55
+402,Accessories,Cables,1240.96,629.17
+403,Technology,Printers,2052.01,1173.99
+404,Office Supplies,Binders,1410.81,872.94
+405,Office Supplies,Paper,150.16,105.47
+406,Office Supplies,Paper,731.15,459.16
+407,Technology,Laptops,304.88,216.52
+408,Furniture,Desks,2080.77,1176.61
+409,Technology,Monitors,1315.34,670.66
+410,Technology,Monitors,2091.34,1185.95
+411,Office Supplies,Storage,1067.49,801.86
+412,Furniture,Desks,1110.79,762.45
+413,Technology,Monitors,515.07,347.99
+414,Technology,Printers,931.69,670.84
+415,Office Supplies,Paper,496.84,234.55
+416,Furniture,Chairs,525.99,362.52
+417,Office Supplies,Binders,105.05,82.9
+418,Office Supplies,Storage,1232.64,822.36
+419,Furniture,Tables,1080.1,673.54
+420,Technology,Printers,691.2,512.9
+421,Office Supplies,Art,102.3,50.25
+422,Technology,Printers,1517.01,832.09
+423,Technology,Monitors,990.0,625.32
+424,Accessories,Headphones,1567.19,879.03
+425,Technology,Laptops,1396.75,654.72
+426,Office Supplies,Paper,1058.18,588.73
+427,Accessories,Adapters,1926.73,1187.71
+428,Technology,Laptops,2075.66,1431.06
+429,Technology,Laptops,1382.14,700.08
+430,Furniture,Tables,675.95,363.55
+431,Office Supplies,Paper,326.06,174.31
+432,Furniture,Tables,699.87,545.31
+433,Technology,Printers,970.53,586.41
+434,Accessories,Cables,1091.26,551.97
+435,Office Supplies,Art,544.52,376.28
+436,Technology,Monitors,128.18,78.16
+437,Technology,Phones,1164.85,735.45
+438,Accessories,Bags,88.31,40.25
+439,Furniture,Chairs,810.51,478.58
+440,Technology,Monitors,1337.53,609.63
+441,Technology,Monitors,1168.62,621.27
+442,Technology,Phones,1805.29,1248.41
+443,Office Supplies,Art,891.77,445.68
+444,Accessories,Bags,1551.98,808.57
+445,Technology,Monitors,1345.08,724.51
+446,Technology,Monitors,876.34,525.14
+447,Technology,Monitors,1436.25,662.58
+448,Technology,Phones,1682.33,787.25
+449,Technology,Printers,2032.66,1131.57
+450,Technology,Phones,1774.37,817.5

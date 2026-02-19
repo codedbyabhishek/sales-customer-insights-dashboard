@@ -1,2 +1,2 @@
-records,date_min,date_max,total_sales
-52000,2024-01-01,2025-06-30,121825515.16
+records,date_min,date_max,net_sales,profit,profit_margin
+180000,2024-01-01,2025-06-30,887911732.19,298823102.78,0.3365

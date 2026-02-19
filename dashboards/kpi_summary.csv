@@ -1,5 +1,8 @@
 metric,value
-total_sales,121825515.16000001
-total_orders,52000.0
-avg_order_value,2342.7983684615388
-active_customers,11833.0
+net_sales,887911732.19
+gross_sales,992401343.4100001
+total_profit,298823102.78
+profit_margin,0.33654595602984577
+total_orders,180000.0
+avg_order_value,4932.842956611112
+active_customers,19996.0

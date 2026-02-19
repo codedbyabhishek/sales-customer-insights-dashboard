@@ -1,47 +1,67 @@
--- 1) Customer lifetime value by segment (CTE + joins)
-WITH customer_revenue AS (
-    SELECT
-        c.customer_id,
-        c.segment,
-        SUM(o.sales) AS lifetime_revenue
-    FROM orders o
-    JOIN customers c ON c.customer_id = o.customer_id
-    GROUP BY c.customer_id, c.segment
-)
+-- 1) Monthly profitability with window functions
 SELECT
-    segment,
-    AVG(lifetime_revenue) AS avg_lifetime_revenue,
-    MAX(lifetime_revenue) AS top_customer_value
-FROM customer_revenue
-GROUP BY segment
-ORDER BY avg_lifetime_revenue DESC;
+    DATE_TRUNC('month', order_ts) AS month,
+    SUM(net_sales) AS net_sales,
+    SUM(profit) AS total_profit,
+    SUM(profit) / NULLIF(SUM(net_sales), 0) AS profit_margin,
+    SUM(net_sales) - LAG(SUM(net_sales)) OVER (ORDER BY DATE_TRUNC('month', order_ts)) AS mom_net_sales_delta
+FROM orders
+GROUP BY 1
+ORDER BY 1;
 
--- 2) Top 10 products by sales (subquery)
-SELECT *
-FROM (
+-- 2) Cohort retention (CTE)
+WITH base AS (
     SELECT
-        p.product_id,
-        p.category,
-        SUM(o.sales) AS product_sales
-    FROM orders o
-    JOIN products p ON p.product_id = o.product_id
-    GROUP BY p.product_id, p.category
-) t
-ORDER BY product_sales DESC
-LIMIT 10;
-
--- 3) Monthly sales and growth rate (CTE)
-WITH monthly_sales AS (
-    SELECT
-        DATE_TRUNC('month', order_date) AS month,
-        SUM(sales) AS total_sales
+        customer_id,
+        DATE_TRUNC('month', order_ts) AS order_month,
+        MIN(DATE_TRUNC('month', order_ts)) OVER (PARTITION BY customer_id) AS cohort_month
     FROM orders
-    GROUP BY 1
+    WHERE order_status = 'completed'
+),
+cohort_counts AS (
+    SELECT
+        cohort_month,
+        EXTRACT(MONTH FROM AGE(order_month, cohort_month)) +
+        12 * EXTRACT(YEAR FROM AGE(order_month, cohort_month)) AS cohort_index,
+        COUNT(DISTINCT customer_id) AS active_customers
+    FROM base
+    GROUP BY 1, 2
+),
+cohort_size AS (
+    SELECT cohort_month, active_customers AS cohort_size
+    FROM cohort_counts
+    WHERE cohort_index = 0
 )
 SELECT
-    month,
-    total_sales,
-    (total_sales - LAG(total_sales) OVER (ORDER BY month))
-        / NULLIF(LAG(total_sales) OVER (ORDER BY month), 0) AS growth_rate
-FROM monthly_sales
-ORDER BY month;
+    c.cohort_month,
+    c.cohort_index,
+    c.active_customers,
+    s.cohort_size,
+    c.active_customers::NUMERIC / NULLIF(s.cohort_size, 0) AS retention_rate
+FROM cohort_counts c
+JOIN cohort_size s USING (cohort_month)
+ORDER BY 1, 2;
+
+-- 3) Campaign and channel efficiency
+SELECT
+    channel,
+    campaign,
+    COUNT(DISTINCT order_id) AS orders,
+    SUM(net_sales) AS net_sales,
+    SUM(profit) AS profit,
+    SUM(profit) / NULLIF(SUM(net_sales), 0) AS margin
+FROM orders
+GROUP BY channel, campaign
+ORDER BY net_sales DESC;
+
+-- 4) Top customers by CLV proxy
+SELECT
+    customer_id,
+    SUM(net_sales) AS lifetime_value,
+    COUNT(DISTINCT order_id) AS order_count,
+    AVG(net_sales) AS avg_order_value
+FROM orders
+WHERE order_status = 'completed'
+GROUP BY customer_id
+ORDER BY lifetime_value DESC
+LIMIT 50;
